@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".fragments.Calculator"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editActivities.EditTeacherActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddModuleTeacherCheckboxActivity"
+            android:exported="true"
+            android:label="@string/add_module_title"
+            android:parentActivityName=".addActivities.AddModuleTeacherActivity"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddModuleTeacherActivity"
+            android:exported="true"
+            android:label="@string/add_module_title"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddModuleActivity"
+            android:exported="true"
+            android:label="@string/add_module_title"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".activities.WeekViewActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddSemesterActivity"
+            android:exported="true"
+            android:label="@string/add_new_semester"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddTeacherActivity"
+            android:exported="true"
+            android:label="@string/add_teacher"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddClassesActivity"
+            android:exported="true"
+            android:label="@string/add_classes"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".addActivities.AddCourseworkActivity"
+            android:exported="true"
+            android:label="@string/add_coursework"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".editActivities.EditModuleTeacherActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="true"
+            android:label="@string/register"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".editActivities.EditModuleActivity"
+            android:exported="false"
+            android:label="@string/edit_module"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".editActivities.EditSemesterActivity"
+            android:exported="false"
+            android:label="@string/edit_semester"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".editActivities.EditClassesActivity"
+            android:exported="false"
+            android:label="@string/edit_class"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".editActivities.EditCourseworkActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.ActionPar" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

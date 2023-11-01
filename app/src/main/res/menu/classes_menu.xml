@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_week_view"
+        android:icon="@drawable/ic_week_view"
+        android:title="@string/week_view"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_add"
+        android:orderInCategory="1"
+        android:title="@string/more_actions"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/add_coursework_action"
+                android:icon="@drawable/ic_coursework_lg"
+                android:title="@string/add_coursework" />
+            <item
+                android:id="@+id/add_class_action"
+                android:icon="@drawable/ic_classes_lg"
+                android:title="@string/add_class" />
+        </menu>
+    </item>
+</menu>

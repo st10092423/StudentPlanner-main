@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.PastPapers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_margin="8dp">
+
+        <Spinner
+            android:id="@+id/year_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/years"
+            android:prompt="@string/years_prompt"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            />
+
+        <Spinner
+            android:id="@+id/language_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/languages"
+            android:prompt="@string/languages_prompt"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp" />
+
+        <!-- Years Drop-down -->
+
+        <Spinner
+            android:id="@+id/grade_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/grades"
+            android:prompt="@string/grades_prompt"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp" />
+
+        <!-- Terms Drop-down -->
+        <Spinner
+            android:id="@+id/term_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/terms"
+            android:prompt="@string/terms_prompt"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/subject_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/subjects"
+            android:prompt="@string/subjects_prompt"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp" />
+
+
+        <RadioGroup
+            android:id="@+id/paper_type_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/paper_type_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paper 1" />
+
+            <RadioButton
+                android:id="@+id/paper_type_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paper 2" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:text="Search"
+            android:padding="8dp"
+            android:background="@drawable/border_bg"
+            android:layout_marginTop="8dp" />
+
+        <ListView
+            android:id="@+id/pdf_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

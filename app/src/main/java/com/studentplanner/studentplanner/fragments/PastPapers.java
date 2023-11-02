@@ -58,7 +58,7 @@ public class PastPapers extends Fragment {
         searchButton = rootView.findViewById(R.id.search_button);
         pdfListView = rootView.findViewById(R.id.pdf_listview);
         CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
-                context, "your_cognito_identity_pool_id", Regions.YOUR_REGION);
+                context, "eu-north-1:867cb15b-c429-4681-a4cc-8507d66f8db1", Regions.US_EAST_1);
         s3Client = new AmazonS3Client(credentialsProvider);
 
 
@@ -164,8 +164,8 @@ public class PastPapers extends Fragment {
         });
     }
     private void fetchFilesFromS3() {
-        String bucketName = "your_bucket_name";
-        String prefix = "your_prefix_for_past_papers/";
+        String bucketName = "hacka";
+        String prefix = "2022/";
 
         List<String> pdfFiles = new ArrayList<>();
 

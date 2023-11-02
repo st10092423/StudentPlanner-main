@@ -5,7 +5,6 @@ plugins {
 android {
     namespace 'com.studentplanner.studentplanner'
 
-
     compileSdk 34
 
     defaultConfig {
